@@ -1,0 +1,13 @@
+<div class="character-container" *ngIf="characters$ | async as characters">
+  <div *ngFor="let character of characters" class="card">
+    <div class="card-body">  
+      <div class="image-wrapper">
+        <img [src]="character.image" [alt]="character.name" class="character-image">
+      </div>
+      <div class="text-wrapper">
+        <h6 class="card-subtitle mb-2 text-muted">{{character.name}}</h6>
+        <a [routerLink]="['/characters/'+ character.id]" class="card-link">Read more...</a>
+      </div>      
+    </div>
+  </div>
+</div>

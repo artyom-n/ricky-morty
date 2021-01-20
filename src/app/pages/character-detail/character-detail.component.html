@@ -1,0 +1,14 @@
+<div class="card-wrapper">
+  <div *ngIf="characters$ | async as characters" class="card">
+    <div class="image-wrapper">
+      <img class="card-img-top character-image" [src]="characters.image" alt="Card image cap" />
+    </div>    
+    <div class="card-body">
+      <h5 class="card-title">{{ characters.name }}</h5>
+      <p>Gender: {{ characters.gender }}</p>
+      <p>Status: {{ characters.status }}</p>
+      <p class="card-text">Created: {{ characters.created }}</p>      
+      <a [routerLink]="['/characters']">Back to all</a>
+    </div>
+  </div>
+</div>

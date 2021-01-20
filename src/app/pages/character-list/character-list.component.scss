@@ -1,0 +1,27 @@
+.character-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 18rem;
+  margin: 10px;
+  min-height: 150px;
+  border-radius: 4px;
+}
+
+.character-image {
+  max-width: 200px;
+  border-radius: 4px;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 16px
+}
+
+.text-wrapper {
+  text-align: center
+}
